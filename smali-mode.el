@@ -5,7 +5,7 @@
 ;; Thanks to Jon Larimer <jlarimer@gmail.com> for the
 ;; vim syntax file, I lifted some things from it :)
 
-(require 'generic-x)
+(require 'generic)
 
 (define-generic-mode
   'smali-mode

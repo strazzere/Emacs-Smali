@@ -99,3 +99,5 @@
 
    "A mode for smali files"
 )
+
+(provide 'smali-mode)

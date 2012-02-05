@@ -1,3 +1,6 @@
+#Smali/Baksmali mode for Emacs#
+
+##Overview##
 Quickly through this together after seeing all the VIM smali syntax variantions.
 I couldn't find one for emacs - and well, that's the editor I prefer so I mashed
 this up. It's probably a really bad hack, but I've never made a mode for emacs,
@@ -12,12 +15,12 @@ strazz@gmail.com
 
 
 
-INSTALL
+##INSTALL##
 ===
 Copy into your .emacs file in your home dir, if you don't have one, rename file to ~/.emacs
 Load up a .smali file and enjoy!
 
-NOTES
+##NOTES##
 ===
 I personally use "//" comments, though these will not recompile in the publicly released
 baksmali/smali packages.

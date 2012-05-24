@@ -17,8 +17,15 @@ strazz@gmail.com
 
 ##INSTALL##
 ===
-Copy into your .emacs file in your home dir, if you don't have one, rename file to ~/.emacs
+Copy into your .emacs.d file in your home dir, if you don't have one, rename file to ~/.emacs.d
 Load up a .smali file and enjoy!
+
+An example of such code:
+
+    (add-to-list 'load-path "~/.emacs.d/includes")
+    ; load the smali/baksmali mode
+    (autoload 'smali-mode "smali-mode" "Major mode for editing and viewing smali issues" t)
+    (setq auto-mode-alist (cons '(".smali$" . smali-mode) auto-mode-alist))
 
 ##NOTES##
 ===

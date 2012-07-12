@@ -85,24 +85,53 @@
   '(
     ;; namespaces
     (
-     "L[a-zA-Z\/]+;" . font-lock-constant-face
+     "L[a-zA-Z\$\/0-9\_]+;" . font-lock-constant-face
     )
     ;; array types
     ;; non-array types
     (
-     "[a-zA-Z]+\:\[+[B|V|Z|S|C|I|J|F|D]" . font-lock-constant-face
+     "\:\[+[B|V|Z|S|C|I|J|F|D]" . font-lock-constant-face
     )
     ;; registers, maybe parameters should be a different color?
     (
-     "v[0-9]\\|p[0-9]" . font-lock-variable-name-face
+     "\{v[0-9]+\}\\|v[0-9]+\\|\{p[0-9]+\}\\|p[0-9]+" . font-lock-variable-name-face
     )
     ;; directives
     (
-     ".class\\|.super\\|.proto\\|.implements\\|.field\\|.subannotation\\|.annotation\\|.enum\\|.method\\|.registers\\|.locals\\|.array-data\\|.packed-switch\\|.sparse-switch\\|.catch\\|.catchall\\|.line\\|.parameter\\|.local\\|.prologue\\|.epilogue\\|.source\\|\.end\s+\(field|subannotation|annotation|method|array-data)\\|\.end\s+\(packed-switch|sparse-switch|parameter|local)\\|\.restart\s+local" . font-lock-builtin-face
+     ".end\s+\\(field\\|subannotation\\|annotation\\|method\\|array-data\\)\\|\.end\s+\\(packed-switch\\|sparse-switch\\|parameter\\|local\s\\)\\|.class\\|.super\\|.proto\\|.implements\\|.field\\|.subannotation\\|.annotation\\|.enum\\|.method\\|.registers\s+[0-9]+\\|.locals\\|.array-data\\|.packed-switch\\|.sparse-switch\\|.end\s+\\(local\\)\\|.parameter\\|.prologue\\|.epilogue\\|.source\\|\.restart\s+local" . font-lock-builtin-face
+    )
+    ;; tags
+    (
+     ".catchall_[0-9]+\\|.catchall\\|.catch_[0-9]+\\|.catch\\|.line\s+[0-9]+\\|:goto_[0-9]+\\|:cond_[0-9a-z]+\\|:try_start_[0-9a-z]+\\|:try_end_[0-9a-z]+\\|.sswitch_data_[0-9a-z]+\\|:sswitch_[0-9a-z]+" . font-lock-doc-face
+    )
+    ;; annotations
+    (
+     "accessFlags\\|name\\|value\\|system\\|\s\{\\|\s+\}" . font-lock-variable-name-face
     )
     ;; access
     (
      "public\\|private\\|protected\\|static\\|final\\|synchronized\\|bridge\\|varargs\\|native\\|abstract\\|strictfp\\|synthetic\\|constructor\\|declared-synchronized\\|interface\\|enum\\|annotation\\|volatile\\|transient" . font-lock-builtin-face
+    )
+    ;; random things to color before others function
+    (
+     "\-\>\\|=" . font-lock-keyword-face
+    )
+    ;; functions
+    (
+     "<[a-zA-Z]+\>\\|\<clinit\>\\|\<init\>\\|[a-zA-Z\$0-9]+\(\\|\(\\|\)" . font-lock-function-name-face
+    )
+    ;; member variables
+    (
+     "[a-zA-Z0-9\-]+" . font-lock-variable-name-face
+    )
+    ;; const-strings
+    (
+     "\\"[*]+\\"" . font-lock-string-face
+    )
+
+    ;; boolean values
+    (
+     "true" . font-lock-variable-name-face
     )
    )
 

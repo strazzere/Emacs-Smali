@@ -64,6 +64,21 @@
      "invoke-virtual/range" "invoke-super/range" "invoke-direct/range"
      "invoke-static/range" "invoke-interface/range" "filled-new-array/range"
      "invoke-virtual-quick/range" "invoke-super-quick/range" "const-wide"
+     "iput-object-volatile" "sget-object-volatile" "sput-object-volatile"
+     "const-class/jumbo" "check-cast/jumbo" "instance-of/jumbo" "new-instance/jumbo"
+     "new-array/jumbo" "filled-new-array/jumbo" "iget/jumbo" "iget-object/jumbo"
+     "iget-boolean/jumbo" "iget-byte/jumbo" "iget-char/jumbo" "iget-short/jumbo"
+     "iput-wide/jumbo" "iput-object/jumbo" "iput-boolean/jumbo" "iput-byte/jumbo"
+     "iput-char/jumbo" "iput-short/jumbo" "sget/jumbo" "sget-wide/jumbo" "sget-object/jumbo"
+     "sget-boolean/jumbo" "sget-byte/jumbo" "sget-char/jumbo" "sget-short/jumbo"
+     "sput/jumbo" "sput-wide/jumbo" "sput-object/jumbo" "sput-boolean/jumbo"
+     "sput-byte/jumbo" "sput-char/jumbo" "sput-short/jumbo" "invoke-virtual/jumbo"
+     "invoke-virtual/jumbo" "invoke-super/jumbo" "invoke-direct/jumbo" "invoke-static/jumbo"
+     "invoke-interface/jumbo" "invoke-object/jumbo" "invoke-object-init/jumbo"
+     "iget-volatile/jumbo" "iget-wide-volatile/jumbo" "iget-object-volatile/jumbo"
+     "iput-volatile/jumbo" "iput-wide-volatile/jumbo" "iput-object-volatile/jumbo"
+     "sget-volatile/jumbo" "sget-wide-volatile/jumbo" "sget-object-volatile/jumbo"
+     "sput-volatile/jumbo" "sput-wide-volatile/jumbo" "sput-object-volatile/jumbo"
    )
 
   ;; other things to colorize

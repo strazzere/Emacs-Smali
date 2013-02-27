@@ -95,7 +95,7 @@
     )
     ;; registers, maybe parameters should be a different color?
     (
-     "\{\\|\}\\|v[0-9]+\\|p[0-9]+" . font-lock-variable-name-face
+     "v[0-9]+\\|p[0-9]+" . font-lock-variable-name-face
     )
     ;; directives
     (
@@ -107,7 +107,7 @@
     )
     ;; annotations
     (
-     "accessFlags\\|name\\|value\\|system\\|\s\{\\|\s+\}" . font-lock-variable-name-face
+     "accessFlags\\|name\\|value\\|system" . font-lock-variable-name-face
     )
     ;; access
     (
@@ -115,7 +115,7 @@
     )
     ;; random things to color before others function
     (
-     "\-\>\\|=" . font-lock-keyword-face
+     "\-\>\\|=\\|\{\\|\}\\|\s..\s\\|,\\|:" . font-lock-keyword-face
     )
     ;; functions
     (
@@ -129,7 +129,6 @@
     (
      "\\"[*]+\\"" . font-lock-string-face
     )
-
     ;; boolean values
     (
      "true" . font-lock-variable-name-face

@@ -103,7 +103,7 @@
     )
     ;; tags
     (
-     ".catchall_[0-9a-z]+\\|.catchall\\|.catch_[0-9a-z]+\\|.catch\\|.line\s+[0-9]+\\|:goto_[0-9]+\\|:cond_[0-9a-z]+\\|:try_start_[0-9a-z]+\\|:try_end_[0-9a-z]+\\|.sswitch_data_[0-9a-z]+\\|:sswitch_[0-9a-z]+" . font-lock-doc-face
+     ".catchall_[0-9a-z]+\\|.catchall\\|.catch_[0-9a-z]+\\|.catch\\|.line\s+[0-9]+\\|:goto_[0-9a-z]+\\|:cond_[0-9a-z]+\\|:try_start_[0-9a-z]+\\|:try_end_[0-9a-z]+\\|.sswitch_data_[0-9a-z]+\\|:sswitch_[0-9a-z]+" . font-lock-doc-face
     )
     ;; annotations
     (

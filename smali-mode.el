@@ -123,7 +123,7 @@
     )
     ;; member variables
     (
-     "[a-zA-Z0-9\-]+" . font-lock-variable-name-face
+     "[a-zA-Z0-9\_\-]+" . font-lock-variable-name-face
     )
     ;; const-strings
     (

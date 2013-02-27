@@ -95,7 +95,7 @@
     )
     ;; registers, maybe parameters should be a different color?
     (
-     "\{v[0-9]+\}\\|v[0-9]+\\|\{p[0-9]+\}\\|p[0-9]+" . font-lock-variable-name-face
+     "\{\\|\}\\|v[0-9]+\\|p[0-9]+" . font-lock-variable-name-face
     )
     ;; directives
     (

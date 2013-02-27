@@ -90,6 +90,7 @@
     ;; array types
     ;; non-array types
     (
+;;     "[a-zA-Z\_]+\
      "\:\[+[B|V|Z|S|C|I|J|F|D]" . font-lock-constant-face
     )
     ;; registers, maybe parameters should be a different color?
@@ -102,7 +103,7 @@
     )
     ;; tags
     (
-     ".catchall_[0-9]+\\|.catchall\\|.catch_[0-9]+\\|.catch\\|.line\s+[0-9]+\\|:goto_[0-9]+\\|:cond_[0-9a-z]+\\|:try_start_[0-9a-z]+\\|:try_end_[0-9a-z]+\\|.sswitch_data_[0-9a-z]+\\|:sswitch_[0-9a-z]+" . font-lock-doc-face
+     ".catchall_[0-9a-z]+\\|.catchall\\|.catch_[0-9a-z]+\\|.catch\\|.line\s+[0-9]+\\|:goto_[0-9]+\\|:cond_[0-9a-z]+\\|:try_start_[0-9a-z]+\\|:try_end_[0-9a-z]+\\|.sswitch_data_[0-9a-z]+\\|:sswitch_[0-9a-z]+" . font-lock-doc-face
     )
     ;; annotations
     (

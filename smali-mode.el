@@ -85,7 +85,7 @@
   '(
     ;; namespaces
     (
-     "L[a-zA-Z\/0-9\_]+;\\|\[L[a-zA-Z\/0-9\_]+;" . font-lock-constant-face
+     "L[a-zA-Z\/0-9\_\\$]+;\\|\[L[a-zA-Z\/0-9\_\\$]+;" . font-lock-constant-face
     )
     ;; array types
     ;; non-array types

@@ -90,7 +90,6 @@
     ;; array types
     ;; non-array types
     (
-;;     "[a-zA-Z\_]+\
      "\:\[+[B|V|Z|S|C|I|J|F|D]" . font-lock-constant-face
     )
     ;; registers, maybe parameters should be a different color?
@@ -107,7 +106,7 @@
     )
     ;; annotations
     (
-     "accessFlags\\|name\\|value\\|system" . font-lock-variable-name-face
+     "accessFlags\\|name\\|value\\|system\\|this\\$" . font-lock-variable-name-face
     )
     ;; access
     (

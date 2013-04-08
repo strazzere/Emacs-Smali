@@ -110,7 +110,7 @@
     )
     ;; access
     (
-     "public\\|private\\|protected\\|static\\|final\\|synchronized\\|bridge\\|varargs\\|native\\|abstract\\|strictfp\\|synthetic\\|constructor\\|declared-synchronized\\|interface\\|enum\\|annotation\\|volatile\\|transient" . font-lock-builtin-face
+     "public \\|private \\|protected \\|static \\|final \\|synchronized \\|bridge \\|varargs \\|native \\|abstract \\|strictfp \\|synthetic \\|constructor \\|declared-synchronized \\|interface \\|enum \\|annotation \\|volatile \\|transient " . font-lock-builtin-face
     )
     ;; random things to color before others function
     (

@@ -87,10 +87,9 @@
     (
      "L[a-zA-Z\/0-9\_\\$]+;\\|\[L[a-zA-Z\/0-9\_\\$]+;" . font-lock-constant-face
     )
-    ;; array types
-    ;; non-array types
+    ;; array/non-array qualified types including return values and parameters
     (
-     "\:\[+[B|V|Z|S|C|I|J|F|D]" . font-lock-constant-face
+     "\\[+[BVZSCIJFD]" . font-lock-constant-face
     )
     ;; registers, maybe parameters should be a different color?
     (

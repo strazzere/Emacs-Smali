@@ -1,6 +1,6 @@
-;; Prototype for smali coloring for emacs
+;; Schema for smali coloring for emacs
 ;;
-;; Maintained by Tim Strazzere <strazz@gmail.com>
+;; Maintained by Tim Strazzere <strazz@gmail.com> <diff@lookout.com>
 ;;
 ;; Thanks to Jon Larimer <jlarimer@gmail.com> for the
 ;; vim syntax file, I lifted some things from it :)
@@ -9,11 +9,11 @@
 
 (define-generic-mode
   'smali-mode
-  ;; comment (fix later)
+  ;; comments
   '(
-    ;; i use these as comments...
+    ;; personal branch compiles these, public branch won't so beware
     "//"
-    ;; true smali comments
+    ;; actual compilable smali comments
     "#"
    )
 

@@ -97,11 +97,11 @@
     )
     ;; directives
     (
-     ".locals\\|.local\\|.end\s\\(field\\|subannotation\\|annotation\\|method\\|array-data\\|packed-switch\\|sparse-switch\\|parameter\\|local\\)\\|.class\\|.super\\|.implements\\|.field\\|.subannotation\\|.annotation\\|.enum\\|.method\\|.registers\s+[0-9]+\\|.array-data\\|.packed-switch\\|.sparse-switch\\|.parameter\\|.prologue\\|.epilogue\\|.source\\|.restart\slocal" . font-lock-builtin-face
+     "\\.locals\\|\\.local\\|\\.end\s\\(field\\|subannotation\\|annotation\\|method\\|array-data\\|packed-switch\\|sparse-switch\\|parameter\\|local\\)\\|\\.class\\|\\.super\\|\\.implements\\|\\.field\\|\\.subannotation\\|\\.annotation\\|\\.enum\\|\\.method\\|\\.registers\s+[0-9]+\\|\\.array-data\\|\\.packed-switch\\|\\.sparse-switch\\|\\.parameter\\|\\.prologue\\|\\.epilogue\\|\\.source\\|\\.restart\slocal" . font-lock-builtin-face
     )
     ;; tags
     (
-     ".catchall_[0-9a-z]+\\|.catchall\\|.catch_[0-9a-z]+\\|.catch\\|.line\s+[0-9]+\\|:goto_[0-9a-z]+\\|:cond_[0-9a-z]+\\|:try_start_[0-9a-z]+\\|:try_end_[0-9a-z]+\\|.sswitch_data_[0-9a-z]+\\|:sswitch_[0-9a-z]+" . font-lock-doc-face
+     "\\.catchall_[0-9a-z]+\\|\\.catchall\\|\\.catch_[0-9a-z]+\\|\\.catch\\|\\.line\s+[0-9]+\\|:goto_[0-9a-z]+\\|:cond_[0-9a-z]+\\|:try_start_[0-9a-z]+\\|:try_end_[0-9a-z]+\\|\\.sswitch_data_[0-9a-z]+\\|:sswitch_[0-9a-z]+" . font-lock-doc-face
     )
     ;; annotations
     (

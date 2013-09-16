@@ -87,10 +87,6 @@
     (
      "L[a-zA-Z\/0-9\_\\$]+;\\|\[L[a-zA-Z\/0-9\_\\$]+;" . font-lock-constant-face
     )
-    ;; array/non-array qualified types including return values and parameters
-    (
-     "\\[+[BVZSCIJFD]" . font-lock-constant-face
-    )
     ;; registers, maybe parameters should be a different color?
     (
      "v[0-9]+\\|p[0-9]+" . font-lock-variable-name-face
@@ -109,7 +105,7 @@
     )
     ;; access
     (
-     "public \\|private \\|protected \\|static \\|final \\|synchronized \\|bridge \\|varargs \\|native \\|abstract \\|strictfp \\|synthetic \\|constructor \\|declared-synchronized \\|interface \\|enum \\|annotation \\|volatile \\|transient " . font-lock-builtin-face
+     "public\s\\|private\s\\|protected\s\\|static\s\\|final\s\\|synchronized\s\\|bridge\s\\|varargs\s\\|native\s\\|abstract\s\\|strictfp\s\\|synthetic\s\\|constructor\s\\|declared-synchronized\s\\|interface\s\\|enum\s\\|annotation\s\\|volatile\s\\|transient\s" . font-lock-builtin-face
     )
     ;; random things to color before others function
     (
@@ -118,6 +114,10 @@
     ;; functions
     (
      "<[a-zA-Z]+\>\\|\<clinit\>\\|\<init\>\\|[a-zA-Z\$0-9]+\(\\|\(\\|\)" . font-lock-function-name-face
+    )
+    ;; array/non-array qualified types including return values and parameters
+    (
+     "\\[+[BVZSCIJFD]\\|[BVZSCIJFD]" . font-lock-variable-name-face
     )
     ;; member variables
     (

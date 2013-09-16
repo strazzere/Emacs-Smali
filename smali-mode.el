@@ -97,7 +97,7 @@
     )
     ;; directives
     (
-     ".locals\\|.local\\|.end\s\\(field\\|subannotation\\|annotation\\|method\\|array-data\\|packed-switch\\|sparse-switch\\|parameter\\|local\\)\\|.class\\|.super\\|.proto\\|.implements\\|.field\\|.subannotation\\|.annotation\\|.enum\\|.method\\|.registers\s+[0-9]+\\|.array-data\\|.packed-switch\\|.sparse-switch\\|.parameter\\|.prologue\\|.epilogue\\|.source\\|.restart\slocal" . font-lock-builtin-face
+     ".locals\\|.local\\|.end\s\\(field\\|subannotation\\|annotation\\|method\\|array-data\\|packed-switch\\|sparse-switch\\|parameter\\|local\\)\\|.class\\|.super\\|.implements\\|.field\\|.subannotation\\|.annotation\\|.enum\\|.method\\|.registers\s+[0-9]+\\|.array-data\\|.packed-switch\\|.sparse-switch\\|.parameter\\|.prologue\\|.epilogue\\|.source\\|.restart\slocal" . font-lock-builtin-face
     )
     ;; tags
     (

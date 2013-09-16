@@ -105,7 +105,7 @@
     )
     ;; annotations
     (
-     "accessFlags \\|name \\|value \\|system \\|this\\$" . font-lock-variable-name-face
+     "accessFlags \\|name \\|value \\|system " . font-lock-variable-name-face
     )
     ;; access
     (
@@ -121,7 +121,7 @@
     )
     ;; member variables
     (
-     "[a-zA-Z0-9\_\-]+" . font-lock-variable-name-face
+     "[a-zA-Z0-9\$\_\-]+" . font-lock-variable-name-face
     )
     ;; const-strings
     (

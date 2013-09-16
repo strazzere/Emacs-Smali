@@ -105,7 +105,7 @@
     )
     ;; annotations
     (
-     "accessFlags\\|name\\|value\\|system\\|this\\$" . font-lock-variable-name-face
+     "accessFlags \\|name \\|value \\|system \\|this\\$" . font-lock-variable-name-face
     )
     ;; access
     (

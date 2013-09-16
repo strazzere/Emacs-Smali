@@ -97,7 +97,7 @@
     )
     ;; directives
     (
-     ".locals\\|.local\\|.end\s+\\(field\\|subannotation\\|annotation\\|method\\|array-data\\)\\|\.end\s+\\(packed-switch\\|sparse-switch\\|parameter\\|local\s\\)\\|.class\\|.super\\|.proto\\|.implements\\|.field\\|.subannotation\\|.annotation\\|.enum\\|.method\\|.registers\s+[0-9]+\\|.array-data\\|.packed-switch\\|.sparse-switch\\|.end\s+\\(local\\)\\|.parameter\\|.prologue\\|.epilogue\\|.source\\|\.restart\s+local" . font-lock-builtin-face
+     ".locals|\\.local\\|.end\s\\(field\\|subannotation\\|annotation\\|method\\|array-data\\|packed-switch\\|sparse-switch\\|parameter\\|local\\)\\|.class\\|.super\\|.proto\\|.implements\\|.field\\|.subannotation\\|.annotation\\|.enum\\|.method\\|.registers\s+[0-9]+\\|.array-data\\|.packed-switch\\|.sparse-switch\\|.parameter\\|.prologue\\|.epilogue\\|.source\\|.restart\slocal" . font-lock-builtin-face
     )
     ;; tags
     (
@@ -105,7 +105,7 @@
     )
     ;; annotations
     (
-     "accessFlags \\|name \\|value \\|system " . font-lock-variable-name-face
+     "accessFlags\s\\|name\s\\|values\s\\|system\s" . font-lock-variable-name-face
     )
     ;; access
     (

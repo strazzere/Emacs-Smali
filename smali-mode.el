@@ -115,6 +115,10 @@
     (
      "<[a-zA-Z]+\>\\|\<clinit\>\\|\<init\>\\|[a-zA-Z\$0-9]+\(\\|\(\\|\)" . font-lock-function-name-face
     )
+    ;; instance field names
+    (
+     "\s\\([a-zA-Z0-9\$\_\-]+\\)" . font-lock-variable-name-face
+    )
     ;; array/non-array qualified types including return values and parameters
     (
      "\\[+[BVZSCIJFD]\\|[BVZSCIJFD]" . font-lock-variable-name-face

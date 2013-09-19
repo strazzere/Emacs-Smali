@@ -121,7 +121,8 @@
     )
     ;; array/non-array qualified types including return values and parameters
     (
-     "\\[+[BVZSCIJFD]\\|[BVZSCIJFD]" . font-lock-variable-name-face
+     "\\[+[BVZSCIJFD]" . font-lock-variable-name-face
+;;"\\[+[BVZSCIJFD]\\|[BVZSCIJFD]" . font-lock-variable-name-face
     )
     ;; member variables
     (

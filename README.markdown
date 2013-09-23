@@ -25,7 +25,7 @@ An example of such code:
     (add-to-list 'load-path "~/.emacs.d/includes")
     ; load the smali/baksmali mode
     (autoload 'smali-mode "smali-mode" "Major mode for editing and viewing smali issues" t)
-    (setq auto-mode-alist (cons '(".smali$" . smali-mode) auto-mode-alist))
+    (add-to-list 'auto-mode-alist '(".smali$" . smali-mode))
 
 ##NOTES##
 ===

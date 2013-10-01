@@ -32,7 +32,7 @@
     )
     ;; move opcodes with switches
     (
-     "move\\(-\\(wid\\(e\/from16\\|e\/16\\|e\\)\\|objec\\(t\/from16\\|t\/16\\|t\\)\\|resul\\(t-\\(wide\\|object\\|exception\\)\\|t\\)\\|exception\\)\\|\/\\(16\\|\/from16\\)\\)" . font-lock-keyword-face
+     "move\\(-\\(wid\\(e\/from16\\|e\/16\\|e\\)\\|objec\\(t\/from16\\|t\/16\\|t\\)\\|resul\\(t-\\(wide\\|object\\|exception\\)\\|t\\)\\|exception\\)\\|\/\\(16\\|from16\\)\\)" . font-lock-keyword-face
     )
     ;; goto opcodes with switches
     (

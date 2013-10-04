@@ -48,7 +48,7 @@
     )
     ;; return opcodes
     (
-     "return-\\(void\\|wide\\|object\\)" . font-lock-keyword-face
+     "return-\\(voi\\(d-barrier\\|d\\)\\|wide\\|object\\)" . font-lock-keyword-face
     )
     ;; fill/ed opcodes
     (
@@ -88,7 +88,7 @@
     )
     ;; invoke opcodes
     (
-     "invoke-\\(direc\\(t-empty\\|t\/range\\|t\/jumbo\\|t\\)\\|objec\\(t-init\/jumbo\\|t\/jumbo\\)\\|stati\\(c\/range\\|j\/jumbo\\|c\\)\\|interfac\\(e\/range\\|e\/jumbo\\|e\\)\\|virtua\\(l-quic\\(k\/range\\|k\\)\\|l\/range\\|l\/jumbo\\|l\\)\\|supe\\(r-quic\\(k\/range\\|k\\)\\|r\/range\\|r\/jumbo\\|r\\)\\)" . font-lock-keyword-face
+     "invoke-\\(direc\\(t-empty\\|t\/range\\|t\/jumbo\\|t\\)\\|objec\\(t-ini\\(t\/jumbo\\|t\/range\\)\\|t\/jumbo\\)\\|stati\\(c\/range\\|j\/jumbo\\|c\\)\\|interfac\\(e\/range\\|e\/jumbo\\|e\\)\\|virtua\\(l-quic\\(k\/range\\|k\\)\\|l\/range\\|l\/jumbo\\|l\\)\\|supe\\(r-quic\\(k\/range\\|k\\)\\|r\/range\\|r\/jumbo\\|r\\)\\)" . font-lock-keyword-face
     )
     ;; monitor op-codes
     (
@@ -138,6 +138,10 @@
     ;; functions
     (
      "\<\\(clinit\\|init\\)\>\\|[\_a-zA-Z\$0-9]+\(\\|\(\\|\)" . font-lock-function-name-face
+    )
+    ;; odex specific functions, vtable/field lookups, inlines
+    (
+     "\\(vtable\\|field\\|inline\\)\@[0-9a-zA-Z]+" . font-lock-function-name-face
     )
     ;; registers and parameters
     (

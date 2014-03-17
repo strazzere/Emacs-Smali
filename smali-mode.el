@@ -121,7 +121,7 @@
     )
     ;; argument/line/hex numbers
     (
-     "\s\\(\\(-0\\|0\\)x[0-9a-ftL]+\\|[0-9]+\\)" . font-lock-constant-face
+     "\s\\(\\(-0\\|0\\)x[0-9a-ftsL]+\\|[0-9]+\\)" . font-lock-constant-face
     )
     ;; annotations
     (
@@ -143,10 +143,6 @@
     (
      "\\(vtable\\|field\\|inline\\)\@[0-9a-zA-Z]+" . font-lock-function-name-face
     )
-    ;; registers and parameters
-    (
-     "v[0-9]+\\|p[0-9]+" . font-lock-variable-name-face
-    )
     ;; instance field names
     (
      "\s\\([a-zA-Z0-9\$\_\-]+\\)" . font-lock-variable-name-face
@@ -154,9 +150,8 @@
     ;; array/non-array qualified types including return values and parameters
     (
      "\\[+[BVZSCIJFD]" . font-lock-variable-name-face
-;;"\\[+[BVZSCIJFD]\\|[BVZSCIJFD]" . font-lock-variable-name-face
     )
-    ;; member variables
+    ;; member variables, registers and parameters
     (
      "[a-zA-Z0-9\$\_\-]+" . font-lock-variable-name-face
     )

@@ -20,6 +20,10 @@
 .field public static final S:[[B = null
 .field public static final enum NO_FILL:Lcom/google/ads/AdRequest$ErrorCode;
 
+# fields that include access names
+.field private privateKey:[B
+.field private publicKey:[B
+
 .annotation build Landroid/annotation/SuppressLint;
 .annotation runtime Landroid/view/ViewDebug$ExportedProperty;
 .annotation system Landroid/view/ViewDebug$ExportedProperty;

@@ -12,14 +12,12 @@ smali code much better already.
 
 Enjoy!
 
-Tim Strazzere - strazz@gmail.com - diff@lookout.com
-
-
+Tim Strazzere - strazz@gmail.com
 
 Install
 -------
-Copy into your .emacs.d file in your home dir, if you don't have one, rename file to ~/.emacs.d
-Load up a .smali file and enjoy!
+Copy into your `.emacs.d/init.el` file in your home dir, if you don't have one, rename file to `~/.emacs.d/init.el`
+Load up a `smali` file and enjoy!
 
 An example of such code:
 

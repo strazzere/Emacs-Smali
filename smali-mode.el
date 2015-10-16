@@ -1,14 +1,39 @@
-;; Schema for smali coloring for emacs
+;;; smali-mode.el --- Major mode for editing Smali/Baksmali files
 ;;
-;; Maintained by Tim Strazzere <strazz@gmail.com> <diff@lookout.com>
+;; Filename: smali-mode.el
+;; Description:
+;; Author: Tim Strazzere <strazz@gmail.com> <diff@lookout.com>
+;; Maintainer:
+;; Copyright (C) 2015, Tim Strazzere, all rights reserved.
+;; Created:
+;; Version:
+;; Last-Updated:
+;;           By:
+;;     Update #: 0
+;; URL:
+;; Keywords: languages smali
+;; Compatibility:
 ;;
-;; Originally take from the vim template by Jon Larimer <jlarimer@gmail.com>
-;; However, as of 09.20.2013 I don't think any of the original bits are even
-;; in here.
-;; 
+;; Features that might be required by this library:
+;;
+;;   None
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;;; Commentary:
+;;
+;;
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;;; Change log:
+;;
+;;
+;;; Code:
 
 (require 'generic)
 
+;;;###autoload
 (define-generic-mode
   'smali-mode
   ;; comments
@@ -174,4 +199,7 @@
    "A mode for smali files"
 )
 
+(add-to-list 'auto-mode-alist '(".smali$" . smali-mode))
+
 (provide 'smali-mode)
+;;; smali-mode.el ends here

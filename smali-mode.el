@@ -169,7 +169,20 @@
     "\\.smali$"
    )
 
-   nil
+  (list
+   (function
+    (lambda ()
+      (setq imenu-generic-expression
+	    '(("Method" "^\\.method.* \\(.*\\)(" 1)
+	      ("Annotation" "^\\.annotation.* \\(.*\\);$" 1)
+	      ("Field" "^\\.field.* \\([^ :]+\\)[:;]" 1)
+	      ))
+      (set-syntax-table
+       (let ((table (make-syntax-table)))
+	 (modify-syntax-entry ?< "." table)
+	 (modify-syntax-entry ?> "." table)
+	 table))
+      )))
 
    "A mode for smali files"
 )

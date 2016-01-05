@@ -13,10 +13,10 @@
   'smali-mode
   ;; comments
   '(
-    ;; personal branch compiles these, public branch won't so beware
-    "//"
     ;; actual compilable smali comments
     "#"
+    ;; personal branch compiles these, public branch won't so beware
+    "//"
    )
 
   ;; keywords we can't or won't regex

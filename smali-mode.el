@@ -5,6 +5,7 @@
 ;; Author: Tim Strazzere <strazz@gmail.com> <diff@lookout.com>
 ;; Maintainer:
 ;; Copyright (C) 2015, Tim Strazzere, all rights reserved.
+;; License: GPL-3+
 ;; Created:
 ;; Version:
 ;; Last-Updated:
